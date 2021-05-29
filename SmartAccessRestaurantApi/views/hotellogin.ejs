@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('partials/signupheader.ejs') %>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('../assets/images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<form class="login100-form validate-form" action="/hotelauthentication/loginhotel" method="POST">
+					<span class="login100-form-title p-b-49">
+						Welcome To Admin Portal
+					</span>
+
+					<div class="form-group">
+                    
+						<label for="address">CNIC*:</label>
+					   <input type="tel" name="cnic" id="cnic" class="cnic form-control" placeholder="XXXXX-XXXXXXX-X"  pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" required>
+				   
+					</div>
+
+					<div class="form-group">
+                    
+						<label for="password">Code*:</label>
+						<input type="text" name="code" id="code" class="form-control" placeholder="Enter Code" required>
+					  </div>
+					<% if(shouldshowalert) { %>
+						<div class="<%=alertClass %> h-6 m-b-23" role="alert">
+							 <%= message %>
+						</div>
+					  <% }else{
+						
+					  } %>
+					<div class="text-right p-t-8 p-b-31">
+						<a href="/authentication/forgot_password">
+							Forgot Code?
+						</a>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Login
+							</button>
+						</div>
+					</div>
+
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+
+	<%- include('partials/signupfooter.ejs') %>
+
+</body>
+</html>

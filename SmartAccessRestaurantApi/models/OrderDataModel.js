@@ -1,0 +1,69 @@
+var mongoose = require('mongoose');
+  
+var orderinfo = mongoose.model('orderinfo',{
+    hotelname:{
+        type:String,
+        required:true,
+        minlength:1,
+        trim:true
+    },
+    username:{
+        type:String,
+        required:true,
+        minlength:1,
+        trim:true
+    },
+     tablenumber:{
+        type:String,
+        required:true,
+        minlength:1,
+        trim:true
+    },
+    productname:{
+        type:Array,
+        required:true,
+        minlength:1,
+        trim:true
+    },
+    coverimage:{
+        type:Array,
+        required:true,
+        minlength:1,
+        trim:true
+    },
+    productprice:{
+        type:Array,
+        required:true,
+        minlength:1,
+        trim:true
+    },
+    totalbill:{
+        type:String,
+        required:true,
+        minlength:1,
+        trim:true
+    },
+    productquantity:{
+        type:Array,
+        required:true,
+        minlength:1,
+        trim:true
+    }
+    ,
+    date:{
+        type:String,
+        required:true,
+        minlength:1,
+        trim:true
+    }
+,
+    status:{
+    type:String,
+    required:true,
+    minlength:1,
+    trim:true
+    }
+});
+module.exports = {
+    orderinfo
+}

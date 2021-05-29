@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    android:background="@drawable/backgroundfororderitems"
+    >
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="7"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+
+            >
+            <TextView
+                android:id="@+id/itemname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="Beef Pulao,Chicken Biryani"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="10"
+
+           >
+           <TextView
+               android:id="@+id/itemstatus"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:padding="5dp"
+               android:text="Beef Pulao,Chicken Biryani"
+               android:fontFamily="sans-serif-medium"
+               android:textStyle="bold"
+               android:textSize="16sp"
+               />
+
+
+
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="10"
+
+           >
+           <TextView
+               android:id="@+id/quantity"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="10"
+               android:padding="5dp"
+               android:text="2,1"
+               android:fontFamily="sans-serif-medium"
+               android:textSize="16sp"
+               />
+
+
+
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="10"
+
+           >
+           <TextView
+               android:id="@+id/totalbill"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Total Bill: Rs 1580"
+               android:padding="5dp"
+               android:textColor="@color/colorPrimary"
+               android:fontFamily="sans-serif-medium"
+               android:textSize="16sp"
+               />
+
+
+
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="10"
+
+           >
+           <TextView
+               android:id="@+id/date"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="15-1-2020 (12:15pm)"
+               android:padding="5dp"
+               android:textColor="#000"
+               android:fontFamily="sans-serif-medium"
+               android:textSize="16sp"
+               />
+
+
+
+
+       </LinearLayout>
+       <Button
+           android:id="@+id/generatebill"
+           android:layout_width="match_parent"
+           android:layout_height="65dp"
+           android:background="@drawable/btnbackground"
+           android:layout_margin="10dp"
+           android:text="Generate Bill"
+            android:textColor="#fff"
+           />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#8AFFFFFF"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:theme="@style/blueaccent"
+            />
+    </LinearLayout>
+</FrameLayout>

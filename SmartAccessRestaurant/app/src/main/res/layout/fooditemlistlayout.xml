@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="@drawable/formfieldbackground"
+    android:padding="5dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            >
+            <ImageView
+                android:id="@+id/coverimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/specialdeals"
+                android:scaleType="fitXY"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="10dp"
+                android:background="#90000000"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+                    <Button
+                        android:id="@+id/decrement"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/ic_minus"
+                        android:shadowColor="@color/colorPrimary"
+                        android:layout_marginRight="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/itemcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp"
+                        android:textColor="#fff"
+                        android:text="0"
+                        android:textAlignment="center"
+
+                        android:gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <Button
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/increment"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/ic_baseline_add_24"
+                        android:shadowColor="@color/colorPrimary"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            android:text="Chicken Karahi Full"
+            android:textColor="#000"
+            android:fontFamily="@font/poppins_bold"
+            />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:text="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd"
+            android:textColor="#D2000000"
+            android:fontFamily="@font/poppins_light"
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            android:text="Price : Pkr 1080"
+            android:textColor="#000"
+            android:fontFamily="@font/poppins_bold"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

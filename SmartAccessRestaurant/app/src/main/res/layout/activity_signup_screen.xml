@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="false"
+    android:id="@+id/mainlayout"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/greybackground"
+            android:orientation="vertical"
+            android:weightSum="10"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Fill The Form Below To Sign Up"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9393" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/formfieldbackground"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fullname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6.75"
+                            android:background="@null"
+                            android:hint="Full Name"
+                            android:inputType="textPersonName"
+                            android:textColor="#000"
+                            app:hintEnabled="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/formfieldbackground"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                            android:id="@+id/ccp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:layout_gravity="center"
+                            />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:background="#9d9393" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/phone"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:hint="Enter Phone"
+                            android:inputType="phone"
+                            android:background="@null"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/formfieldbackground"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6.75"
+                            android:hint="Email Address"
+                            app:hintEnabled="false"
+                            android:inputType="textEmailAddress"
+                            android:background="@null"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/formfieldbackground"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6.75"
+                            android:hint="Password"
+                            app:hintEnabled="false"
+                            android:inputType="textPassword"
+                            android:background="@null"
+                            android:textColor="#000" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/formfieldbackground"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/repassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6.75"
+                            android:hint="Retype Password"
+                            app:hintEnabled="false"
+                            android:inputType="textPassword"
+                            android:background="@null"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Already Have An Account?"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/poppins_regular"
+                            />
+                        <TextView
+                            android:id="@+id/signintxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SignIn"
+                            android:textStyle="bold"
+                            android:textColor="#0079be"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/poppins_regular"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/signup_btn"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Sign Up"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_medium"
+                        android:background="@drawable/btnbackground"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
